@@ -54,7 +54,7 @@ namespace MultiClient
             }
         }
 
-        /// Close socket and exit program.
+        // Close socket and exit program.
         private static void Exit()
         {
             SendString("exit"); // Tell the server we are exiting
@@ -75,7 +75,7 @@ namespace MultiClient
             }
         }
 
-        /// Sends a string to the server with ASCII encoding.
+        // Sends a string to the server with ASCII encoding.
         private static void SendString(string text)
         {
             byte[] buffer = Encoding.ASCII.GetBytes(text);

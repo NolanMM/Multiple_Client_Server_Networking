@@ -31,10 +31,9 @@ namespace MultiServer
             Console.WriteLine("Server setup complete, waiting for the connection...\n");
         }
 
-        /// <summary>
-        /// Close all connected client (we do not need to shutdown the server socket as its connections
-        /// are already closed with the clients).
-        /// </summary>
+
+        // Close all connected client (we do not need to shutdown the server socket as its connections
+        // are already closed with the clients).
         private static void CloseAllSockets()
         {
             foreach (Socket socket in clientSockets)
